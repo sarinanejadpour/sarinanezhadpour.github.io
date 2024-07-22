@@ -13,4 +13,4 @@ In the summer of 2024, I joined the Iran National Observatory project at IPM, wo
 
 You can check my code in my [Github](Github.com/mitramaleki)
 
-Feel free to contact me by my [Email](mitramalekiy@gmail.com) (:
+Feel free to contact me by my [Email](mitramalekiy@gmail.com) 
