@@ -11,6 +11,6 @@ Hello! I'm Mitra Maleki, a  physics student currently working at the Institute f
 
 In the summer of 2024, I joined the Iran National Observatory project at IPM, working under the supervision of Dr. Amin Farhang. My role involves creating the core algorithms and data analysis methods needed for astronomical observations, similar to the European Southern Observatory's (ESO) work. 
 
-You can check my code in my [Github](Github.com/mitramaleki)
+Feel free to contact me by my [Email](mailto:mitramalekiy@gmail.com)
 
-Feel free to contact me by my [Email](mitramalekiy@gmail.com) 
+I would be happy to read your messages and learn from your ideas to improve my codes.-
