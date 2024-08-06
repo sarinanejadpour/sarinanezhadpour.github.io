@@ -1,6 +1,6 @@
 
 
-Hello! I'm Mitra Maleki, a  physics student currently working at the Institute for Research in Fundamental Sciences (IPM) and the Iran National Observatory (INO). I hold a Bachelor's in Physics from Sharif University of Technology, where I developed my interest in Cosmology, Astronomy, and Astrophysics. I enjoy observing, but further I am interested in data science and data analysis, so I am trying to expand my knowledge and learn new things((:
+Hello! I'm Mitra Maleki, a  physics student currently working at the Institute for Research in Fundamental Sciences (IPM) and the Iran National Observatory (INO). I hold a Bachelor's in Physics from the Sharif University of Technology, where I developed my interest in Astrophysics, Astronomy, and Cosmology. Nowadays, my main interest is nuclear reactions in stars! I enjoy observing, but further I am interested in data science and data analysis, so I am trying to expand my knowledge and learn new things((:
 
 
 
@@ -13,4 +13,4 @@ In the summer of 2024, I joined the Iran National Observatory project at IPM, wo
 
 Feel free to contact me by my [Email](mailto:mitramalekiy@gmail.com)
 
-I would be happy to read your messages and learn from your ideas to improve my codes.-
+I would happily read your messages and learn from your ideas to improve my codes.-
