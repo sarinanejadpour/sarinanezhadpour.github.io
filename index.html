@@ -14,79 +14,58 @@
       margin: 0;
       padding: 0;
       font-family: 'Crimson Pro', serif;
-      color: #ffffff;
-      line-height: 1.8;
+      color: #000000;
+      line-height: 1.6;
       font-size: 16px;
       background: url('assets/img/5814688362580264174.jpg') no-repeat center center/cover;
     }
 
-    /* Full-page dark overlay for readability */
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
-      z-index: -1;
-    }
-
-    /* Main Content Styling */
     main {
       max-width: 800px;
-      margin: 0 auto;
-      padding: 40px;
-      background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for content */
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8); /* Optional: For better readability */
     }
+
     h1, h2 {
       font-weight: 700;
       text-transform: uppercase;
       margin-bottom: 15px;
-      color: #ffffff;
     }
-    p, ul {
-      color: #dddddd;
+
+    p {
+      margin-bottom: 15px;
     }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     ul li {
       margin-bottom: 10px;
     }
+
     ul li a {
       text-decoration: none;
       font-weight: 600;
-      color: #ffffff;
-      border-bottom: 1px solid #ffffff;
-    }
-    ul li a:hover {
-      color: #dddddd;
-      border-bottom: 1px solid #dddddd;
+      color: #000000;
     }
 
-    /* Footer */
+    ul li a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
       margin-top: 20px;
       padding: 10px;
       font-size: 0.85em;
-      color: #dddddd;
-    }
-    footer a {
-      color: #ffffff;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
+      color: #000000;
     }
   </style>
 </head>
 <body>
-  <!-- Main Content -->
   <main>
     <header>
       <h1>Mitra Maleki</h1>
@@ -135,7 +114,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Mitra Maleki | Academic Portfolio</p>
   </footer>
