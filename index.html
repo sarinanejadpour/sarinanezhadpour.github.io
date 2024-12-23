@@ -13,52 +13,33 @@
       font-family: 'Crimson Pro', serif;
       margin: 0;
       padding: 0;
-      background: #ffffff;
-      color: #000000;
-      line-height: 1.6;
+      background: url('assets/img/5814688362580264174.jpg') no-repeat center center/cover;
+      color: #ffffff;
+      line-height: 1.8;
       font-size: 16px;
     }
 
-    /* Header Section with Background Image */
-    header {
-      position: relative;
-      text-align: center;
-      color: #ffffff;
-      padding: 80px 20px;
-      background: url('assets/img/5814688362580264174.jpg') no-repeat center center/cover;
-    }
-    header::before {
+    /* Overlay for Readability */
+    body::before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
-      z-index: 1;
-    }
-    header .content {
-      position: relative;
-      z-index: 2; /* Place content above the overlay */
-    }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    header p {
-      margin: 15px 0;
-      font-size: 1.2em;
-      font-style: italic;
-      color: #dddddd;
+      background: rgba(0, 0, 0, 0.7); /* Black overlay with 70% opacity */
+      z-index: -1;
     }
 
-    /* Main Content */
+    /* Main Content Layout */
     main {
       max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 50px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+      color: #000;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
     section {
       margin-bottom: 30px;
@@ -70,6 +51,7 @@
       border-bottom: 1px solid #ddd;
       padding-bottom: 5px;
       text-transform: uppercase;
+      color: #333;
     }
     section p {
       margin-bottom: 15px;
@@ -96,7 +78,7 @@
     footer {
       text-align: center;
       padding: 20px;
-      border-top: 1px solid #ddd;
+      margin-top: 20px;
       font-size: 0.85em;
       color: #333;
     }
@@ -110,19 +92,16 @@
   </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="content">
+  <!-- Main Content -->
+  <main>
+    <header>
       <h1>Mitra Maleki</h1>
       <p>B.Sc. in Physics | Astrophysics Researcher</p>
       <p>
         Exploring the universe through the lens of cosmology, astrophysics, and theoretical physics. Merging intellectual rigor and computational tools to uncover the mysteries of the early universe and beyond.
       </p>
-    </div>
-  </header>
+    </header>
 
-  <!-- Main Content -->
-  <main>
     <!-- Current Project Section -->
     <section id="current-project">
       <h2>Current Project</h2>
