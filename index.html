@@ -9,52 +9,46 @@
   <!-- Styling -->
   <style>
     /* General Styles */
-    body {
-      font-family: 'Crimson Pro', serif;
+    html, body {
+      height: 100%;
       margin: 0;
       padding: 0;
-      background: url('assets/img/5814688362580264174.jpg') no-repeat center center/cover;
+      font-family: 'Crimson Pro', serif;
       color: #ffffff;
       line-height: 1.8;
       font-size: 16px;
+      background: url('assets/img/5814688362580264174.jpg') no-repeat center center/cover;
     }
 
-    /* Overlay for Readability */
+    /* Full-page dark overlay for readability */
     body::before {
       content: '';
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.7); /* Black overlay with 70% opacity */
+      background: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
       z-index: -1;
     }
 
-    /* Main Content Layout */
+    /* Main Content Styling */
     main {
       max-width: 800px;
-      margin: 50px auto;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-      color: #000;
+      margin: 0 auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for content */
       border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
-    section {
-      margin-bottom: 30px;
-    }
-    section h2 {
-      font-size: 1.4em;
-      margin-bottom: 15px;
+    h1, h2 {
       font-weight: 700;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
       text-transform: uppercase;
-      color: #333;
-    }
-    section p {
       margin-bottom: 15px;
+      color: #ffffff;
+    }
+    p, ul {
+      color: #dddddd;
     }
     ul {
       list-style: none;
@@ -66,24 +60,24 @@
     ul li a {
       text-decoration: none;
       font-weight: 600;
-      color: #000000;
-      border-bottom: 1px solid #000000;
+      color: #ffffff;
+      border-bottom: 1px solid #ffffff;
     }
     ul li a:hover {
-      color: #555;
-      border-bottom: 1px solid #555;
+      color: #dddddd;
+      border-bottom: 1px solid #dddddd;
     }
 
     /* Footer */
     footer {
       text-align: center;
-      padding: 20px;
       margin-top: 20px;
+      padding: 10px;
       font-size: 0.85em;
-      color: #333;
+      color: #dddddd;
     }
     footer a {
-      color: #000;
+      color: #ffffff;
       text-decoration: none;
     }
     footer a:hover {
