@@ -19,34 +19,39 @@
       font-size: 16px;
     }
 
-    /* Header Layout */
+    /* Header Section with Background Image */
     header {
-      display: flex;
-      align-items: center;
-      padding: 40px 20px;
-      border-bottom: 1px solid #ddd;
+      position: relative;
+      text-align: center;
+      color: #ffffff;
+      padding: 80px 20px;
+      background: url('assets/img/5814688362580264174.jpg') no-repeat center center/cover;
     }
-    header img {
-      width: 180px;
-      height: auto;
-      border-radius: 8px;
-      margin-right: 30px;
-      border: 2px solid #333333;
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+      z-index: 1;
     }
-    header .info {
-      flex: 1;
+    header .content {
+      position: relative;
+      z-index: 2; /* Place content above the overlay */
     }
     header h1 {
-      font-size: 2em;
+      font-size: 3em;
       margin: 0;
       font-weight: 700;
       text-transform: uppercase;
     }
     header p {
-      margin: 10px 0;
-      font-size: 1em;
+      margin: 15px 0;
+      font-size: 1.2em;
       font-style: italic;
-      color: #333;
+      color: #dddddd;
     }
 
     /* Main Content */
@@ -105,14 +110,13 @@
   </style>
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header Section -->
   <header>
-    <img src="assets/img/5814688362580264174.jpg" alt="Mitra Maleki">
-    <div class="info">
+    <div class="content">
       <h1>Mitra Maleki</h1>
       <p>B.Sc. in Physics | Astrophysics Researcher</p>
       <p>
-        I am a physicist exploring the wonders of the universe through the lens of cosmology, astrophysics, and theoretical models. With a strong academic foundation from Sharif University of Technology, my work merges intellectual rigor and computational tools to uncover the mysteries of the early universe and beyond.
+        Exploring the universe through the lens of cosmology, astrophysics, and theoretical physics. Merging intellectual rigor and computational tools to uncover the mysteries of the early universe and beyond.
       </p>
     </div>
   </header>
