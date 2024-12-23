@@ -3,46 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mitra Maleki</title>
+  <title>Mitra Maleki - Academic Portfolio</title>
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
   <!-- Styling -->
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'EB Garamond', serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #000000;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      font-weight: 700;
+    }
+    header p {
+      margin: 10px 0;
+      font-size: 1.2em;
+      font-style: italic;
+      color: #333;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      font-weight: 700;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    section p {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 15px;
+    }
+    ul li a {
+      text-decoration: none;
+      font-weight: 700;
+      color: #000000;
+      border-bottom: 1px solid #000000;
+    }
+    ul li a:hover {
+      color: #555;
+      border-bottom: 1px solid #555;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 0.9em;
+      color: #333;
+    }
+    footer a {
+      color: #000;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
+    <img src="your-image.jpg" alt="Mitra Maleki">
     <h1>Mitra Maleki</h1>
     <p>B.Sc. in Physics | Astrophysics Researcher</p>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section id="about">
       <h2>About Me</h2>
       <p>
-        I hold a Bachelor's degree in Physics from Sharif University of Technology, specializing in astrophysics, cosmology, and computational methods. My academic focus is on exploring the early universe, gravitational waves, and the formation of large-scale cosmic structures. My work integrates theoretical models and computational tools to understand astrophysical phenomena.
+        I am a physics graduate specializing in astrophysics, cosmology, and computational methods.
+        My research focuses on understanding the early universe, gravitational waves, and large-scale cosmic structures. 
+        With experience in Python, C++, and Mathematica, I develop computational tools and conduct theoretical research 
+        to explore the mysteries of the cosmos.
       </p>
-    </section>
-
-    <!-- Research Interests -->
-    <section id="research">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Early Universe Cosmology</li>
-        <li>Primordial Black Holes</li>
-        <li>Gravitational Waves</li>
-        <li>Astrophysical Data Analysis</li>
-        <li>Large-Scale Structure Formation</li>
-      </ul>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-      <h2>Selected Projects</h2>
+      <h2>Projects</h2>
       <ul>
-        <li><a href="#">Weinberg Cosmology Derivations</a>: Numerical solutions and derivations inspired by Steven Weinberg's *Cosmology*.</li>
-        <li><a href="#">INO Python Tools</a>: Python-based algorithms for astronomical observations, including a Sky Magnitude Calculator and Ephemeris Generator.</li>
-        <li><a href="#">Primordial Black Holes</a>: Research into the formation and evolution of black holes in the early universe.</li>
+        <li><a href="https://github.com/mitramaleki/weinberg-cosmology" target="_blank">Weinberg Cosmology Derivations</a>: Numerical solutions and derivations inspired by Steven Weinberg's *Cosmology*.</li>
+        <li><a href="https://github.com/mitramaleki/ino-tools" target="_blank">INO Python Tools</a>: Python-based tools for astronomical observations, including a Sky Magnitude Calculator and Ephemeris Generator.</li>
+        <li><a href="https://github.com/mitramaleki/primordial-blackholes" target="_blank">Primordial Black Holes</a>: Researching black hole formation in the early universe, focusing on perturbations and cosmic evolution.</li>
       </ul>
     </section>
 
@@ -63,6 +145,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Mitra Maleki | Academic Portfolio</p>
   </footer>
