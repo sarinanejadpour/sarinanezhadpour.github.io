@@ -25,7 +25,7 @@
       max-width: 800px;
       margin: 40px auto;
       padding: 20px;
-      background: rgba(255, 255, 255, 0.8); /* Semi-transparent white for readability */
+      background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for readability */
       border-radius: 10px;
     }
 
@@ -58,17 +58,27 @@
       text-decoration: underline;
     }
 
-    /* Slider Styles */
+    /* Slider Section */
+    .sliders-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
     .slider {
       position: relative;
-      max-width: 100%;
-      margin: 20px auto;
+      width: 48%; /* Half of the container width */
+      height: 300px;
       overflow: hidden;
       border-radius: 10px;
+      background: #ddd;
     }
 
     .slider img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
       display: none;
     }
 
@@ -144,6 +154,10 @@
         <strong>Python Development for Iran National Observatory</strong><br>
         During my work at the Iran National Observatory, I developed Python-based tools to support astronomical observations. Inspired by methodologies at the European Southern Observatory, I created algorithms for data analysis and tools like a Sky Magnitude Calculator and Ephemeris Generator.
       </p>
+    </section>
+
+    <!-- Sliders Section -->
+    <div class="sliders-container">
       <!-- Slider for INO Images -->
       <div class="slider" id="ino-slider">
         <img src="assets/img/Ino observatory.jpg" class="active" alt="INO Observatory">
@@ -154,23 +168,18 @@
           <button onclick="nextSlide('ino-slider')">❯</button>
         </div>
       </div>
-    </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery">
-      <h2>Gallery</h2>
       <!-- Slider for Milky Way Images -->
       <div class="slider" id="milkyway-slider">
         <img src="assets/img/milky way.jpg" class="active" alt="Milky Way">
         <img src="assets/img/mily way.jpg" alt="Milky Way 2">
-        <img src="assets/img/stars.jpg" alt="Stars">
         <img src="assets/img/telescope with milky way.jpg" alt="Telescope with Milky Way">
         <div class="slider-controls">
           <button onclick="prevSlide('milkyway-slider')">❮</button>
           <button onclick="nextSlide('milkyway-slider')">❯</button>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer>
