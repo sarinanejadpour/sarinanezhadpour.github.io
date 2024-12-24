@@ -17,15 +17,15 @@
       color: #000000;
       line-height: 1.6;
       font-size: 16px;
-      background: url('assets/img/background me.jpg') no-repeat center center;
-      background-size: cover; /* Ensures full-page background */
+      background: url('assets/img/background me.jpg') no-repeat center center fixed;
+      background-size: cover; /* Ensures the background covers the whole page */
     }
 
     main {
       max-width: 800px;
       margin: 40px auto;
       padding: 20px;
-      background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for readability */
+      background: rgba(255, 255, 255, 0.8); /* Semi-transparent white for readability */
       border-radius: 10px;
     }
 
@@ -58,29 +58,46 @@
       text-decoration: underline;
     }
 
-    /* Gallery Section */
-    .gallery {
-      margin-top: 30px;
+    /* Slider Styles */
+    .slider {
+      position: relative;
+      max-width: 100%;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 10px;
     }
-    .gallery h2 {
-      text-align: center;
-      margin-bottom: 20px;
+
+    .slider img {
+      width: 100%;
+      display: none;
     }
-    .gallery-images {
+
+    .slider img.active {
+      display: block;
+    }
+
+    .slider-controls {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+      justify-content: space-between;
+      transform: translateY(-50%);
     }
-    .gallery-images img {
-      width: 300px;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease;
+
+    .slider-controls button {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      color: #000;
     }
-    .gallery-images img:hover {
-      transform: scale(1.05); /* Slight zoom effect on hover */
+
+    .slider-controls button:hover {
+      background-color: rgba(200, 200, 200, 0.8);
     }
 
     footer {
@@ -90,10 +107,12 @@
       font-size: 0.85em;
       color: #000000;
     }
+
     footer a {
       color: #000000;
       text-decoration: none;
     }
+
     footer a:hover {
       text-decoration: underline;
     }
@@ -102,7 +121,6 @@
 <body>
   <main>
     <header>
-      <img src="assets/img/headshot_circle.png" alt="Mitra Maleki" style="width: 150px; border-radius: 50%; display: block; margin: 0 auto;">
       <h1 style="text-align: center;">Mitra Maleki</h1>
       <p style="text-align: center;">B.Sc. in Physics | Astrophysics Researcher</p>
       <p>
@@ -124,31 +142,33 @@
       <h2>Previous Project</h2>
       <p>
         <strong>Python Development for Iran National Observatory</strong><br>
-        During my work at the Iran National Observatory, I developed Python-based tools to support astronomical observations. Inspired by methodologies at the European Southern Observatory, I created algorithms for data analysis and tools like a Sky Magnitude Calculator and Ephemeris Generator. This work combined my passion for coding with the practicalities of large-scale observational systems.
+        During my work at the Iran National Observatory, I developed Python-based tools to support astronomical observations. Inspired by methodologies at the European Southern Observatory, I created algorithms for data analysis and tools like a Sky Magnitude Calculator and Ephemeris Generator.
       </p>
-      <img src="assets/img/Ino observatory.jpg" alt="Iran National Observatory" style="width: 100%; border-radius: 10px; margin-top: 20px;">
-      <img src="assets/img/me in ino.jpg" alt="Me at INO" style="width: 100%; border-radius: 10px; margin-top: 20px;">
-      <img src="assets/img/ino whole.jpg" alt="INO Telescope" style="width: 100%; border-radius: 10px; margin-top: 20px;">
-    </section>
-
-    <!-- Academic Notes Section -->
-    <section id="notes">
-      <h2>Access My Files</h2>
-      <p>My notes and derivations for key cosmology texts are available below:</p>
-      <ul>
-        <li><a href="https://drive.google.com/drive/folders/1zZXXEmaMxbcW2_ejNytByNcWc7InKgOY?usp=sharing" target="_blank">Baumann's *Cosmology* Notes</a></li>
-        <li><a href="https://drive.google.com/drive/folders/1gyUmbMcte5FTwPy6-ijBKDV-IGwCmWAf?usp=sharing" target="_blank">Weinberg's *Cosmology* Notes</a></li>
-      </ul>
+      <!-- Slider for INO Images -->
+      <div class="slider" id="ino-slider">
+        <img src="assets/img/Ino observatory.jpg" class="active" alt="INO Observatory">
+        <img src="assets/img/ino whole.jpg" alt="INO Telescope">
+        <img src="assets/img/me in ino.jpg" alt="Me at INO">
+        <div class="slider-controls">
+          <button onclick="prevSlide('ino-slider')">❮</button>
+          <button onclick="nextSlide('ino-slider')">❯</button>
+        </div>
+      </div>
     </section>
 
     <!-- Gallery Section -->
     <section class="gallery">
       <h2>Gallery</h2>
-      <div class="gallery-images">
-        <img src="assets/img/milky way.jpg" alt="Milky Way">
+      <!-- Slider for Milky Way Images -->
+      <div class="slider" id="milkyway-slider">
+        <img src="assets/img/milky way.jpg" class="active" alt="Milky Way">
         <img src="assets/img/mily way.jpg" alt="Milky Way 2">
         <img src="assets/img/stars.jpg" alt="Stars">
         <img src="assets/img/telescope with milky way.jpg" alt="Telescope with Milky Way">
+        <div class="slider-controls">
+          <button onclick="prevSlide('milkyway-slider')">❮</button>
+          <button onclick="nextSlide('milkyway-slider')">❯</button>
+        </div>
       </div>
     </section>
   </main>
@@ -156,5 +176,24 @@
   <footer>
     <p>&copy; 2024 Mitra Maleki | Academic Portfolio</p>
   </footer>
+
+  <!-- JavaScript for Slider -->
+  <script>
+    function nextSlide(sliderId) {
+      const slider = document.getElementById(sliderId);
+      const activeImage = slider.querySelector('.active');
+      const nextImage = activeImage.nextElementSibling || slider.querySelector('img:first-child');
+      activeImage.classList.remove('active');
+      nextImage.classList.add('active');
+    }
+
+    function prevSlide(sliderId) {
+      const slider = document.getElementById(sliderId);
+      const activeImage = slider.querySelector('.active');
+      const prevImage = activeImage.previousElementSibling || slider.querySelector('img:last-child');
+      activeImage.classList.remove('active');
+      prevImage.classList.add('active');
+    }
+  </script>
 </body>
 </html>
