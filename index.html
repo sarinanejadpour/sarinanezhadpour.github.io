@@ -15,10 +15,15 @@
       padding: 0;
       font-family: 'Crimson Pro', serif;
       color: #000000;
-      line-height: 1.6;
+      line-height: 1.8;
       font-size: 16px;
-      background: url('assets/img/background me.jpg') no-repeat center center fixed;
+      background: url('assets/img/background me.jpg') no-repeat center top;
       background-size: cover; /* Ensure the background covers the entire site */
+      background-attachment: scroll; /* Allow scrolling */
+    }
+
+    body {
+      min-height: 150vh; /* Extend scrollability */
     }
 
     main {
@@ -31,7 +36,6 @@
 
     h1, h2 {
       font-weight: 700;
-      text-transform: uppercase;
       margin-bottom: 15px;
     }
 
@@ -58,21 +62,21 @@
       text-decoration: underline;
     }
 
-    /* Slider Section */
-    .sliders-container {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
+    /* Gallery Section */
+    .gallery {
       margin-top: 30px;
     }
-
+    .gallery h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
     .slider {
       position: relative;
-      width: 48%; /* Half of the container width */
-      height: 300px;
+      max-width: 100%;
+      height: 400px;
       overflow: hidden;
       border-radius: 10px;
-      background: #ddd;
+      margin: 0 auto;
     }
 
     .slider img {
@@ -134,7 +138,7 @@
       <h1 style="text-align: center;">Mitra Maleki</h1>
       <p style="text-align: center;">B.Sc. in Physics | Astrophysics Researcher</p>
       <p>
-        Exploring the universe through the lens of cosmology, astrophysics, and theoretical physics. Merging intellectual rigor and computational tools to uncover the mysteries of the early universe and beyond.
+        Hi! I’m Mitra Maleki, a physicist exploring the mysteries of the universe. With a deep passion for astrophysics and cosmology, my work is focused on understanding the early universe and unlocking the secrets of its evolution. I enjoy blending theoretical physics with practical coding and data analysis.
       </p>
     </header>
 
@@ -142,8 +146,7 @@
     <section id="current-project">
       <h2>Current Project</h2>
       <p>
-        <strong>Deep Dive into Weinberg’s Cosmology</strong><br>
-        My current research focuses on a detailed exploration of Weinberg’s *Cosmology*. Under the mentorship of Dr. Ali Akbar Abolhasani, I am revisiting foundational cosmological theories, refining our understanding of the early universe, and conducting numerical derivations that link theory to observation.
+        Right now, I’m diving deep into Weinberg’s Cosmology, revisiting key theories about the early universe. Under the guidance of Dr. Ali Akbar Abolhasani, I’m exploring the foundations of cosmological phenomena and applying advanced numerical techniques to refine our understanding of the cosmos.
       </p>
     </section>
 
@@ -151,43 +154,33 @@
     <section id="previous-project">
       <h2>Previous Project</h2>
       <p>
-        <strong>Python Development for Iran National Observatory</strong><br>
-        During my work at the Iran National Observatory, I developed Python-based tools to support astronomical observations. Inspired by methodologies at the European Southern Observatory, I created algorithms for data analysis and tools like a Sky Magnitude Calculator and Ephemeris Generator.
+        During my time at the Iran National Observatory, I worked on Python-based tools for astronomical observations. Inspired by the European Southern Observatory's methods, I created tools like a Sky Magnitude Calculator and Ephemeris Generator, combining my love for programming with the demands of large-scale observation systems.
       </p>
     </section>
 
     <!-- Academic Notes Section -->
     <section id="notes">
-      <h2>Access My Files</h2>
-      <p>My notes and derivations for key cosmology texts are available below:</p>
+      <h2>My Notes and Files</h2>
+      <p>You can access my detailed notes and derivations below:</p>
       <ul>
-        <li><a href="https://drive.google.com/drive/folders/1zZXXEmaMxbcW2_ejNytByNcWc7InKgOY?usp=sharing" target="_blank">Baumann's *Cosmology* Notes</a></li>
-        <li><a href="https://drive.google.com/drive/folders/1gyUmbMcte5FTwPy6-ijBKDV-IGwCmWAf?usp=sharing" target="_blank">Weinberg's *Cosmology* Notes</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1zZXXEmaMxbcW2_ejNytByNcWc7InKgOY?usp=sharing" target="_blank">Baumann's Cosmology Notes</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1gyUmbMcte5FTwPy6-ijBKDV-IGwCmWAf?usp=sharing" target="_blank">Weinberg's Cosmology Notes</a></li>
       </ul>
     </section>
 
     <!-- Gallery Section -->
     <section class="gallery">
       <h2>Gallery</h2>
-      <!-- Slider for INO Images -->
-      <div class="slider" id="ino-slider">
+      <div class="slider" id="gallery-slider">
         <img src="assets/img/Ino observatory.jpg" class="active" alt="INO Observatory">
         <img src="assets/img/ino whole.jpg" alt="INO Telescope">
         <img src="assets/img/me in ino.jpg" alt="Me at INO">
-        <div class="slider-controls">
-          <button onclick="prevSlide('ino-slider')">❮</button>
-          <button onclick="nextSlide('ino-slider')">❯</button>
-        </div>
-      </div>
-
-      <!-- Slider for Milky Way Images -->
-      <div class="slider" id="milkyway-slider">
-        <img src="assets/img/milky way.jpg" class="active" alt="Milky Way">
+        <img src="assets/img/milky way.jpg" alt="Milky Way">
         <img src="assets/img/mily way.jpg" alt="Milky Way 2">
         <img src="assets/img/telescope with milky way.jpg" alt="Telescope with Milky Way">
         <div class="slider-controls">
-          <button onclick="prevSlide('milkyway-slider')">❮</button>
-          <button onclick="nextSlide('milkyway-slider')">❯</button>
+          <button onclick="prevSlide('gallery-slider')">❮</button>
+          <button onclick="nextSlide('gallery-slider')">❯</button>
         </div>
       </div>
     </section>
