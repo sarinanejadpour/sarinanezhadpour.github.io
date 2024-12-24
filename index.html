@@ -17,9 +17,8 @@
       color: #000000;
       line-height: 1.6;
       font-size: 16px;
-      background: url('assets/img/background me.jpg') no-repeat center top;
-      background-size: contain; /* Show the entire background image */
-      background-attachment: scroll; /* Allow scrolling to see the entire image */
+      background: url('assets/img/background me.jpg') no-repeat center center fixed;
+      background-size: cover; /* Ensure the background covers the entire site */
     }
 
     main {
@@ -157,8 +156,19 @@
       </p>
     </section>
 
-    <!-- Sliders Section -->
-    <div class="sliders-container">
+    <!-- Academic Notes Section -->
+    <section id="notes">
+      <h2>Access My Files</h2>
+      <p>My notes and derivations for key cosmology texts are available below:</p>
+      <ul>
+        <li><a href="https://drive.google.com/drive/folders/1zZXXEmaMxbcW2_ejNytByNcWc7InKgOY?usp=sharing" target="_blank">Baumann's *Cosmology* Notes</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1gyUmbMcte5FTwPy6-ijBKDV-IGwCmWAf?usp=sharing" target="_blank">Weinberg's *Cosmology* Notes</a></li>
+      </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+      <h2>Gallery</h2>
       <!-- Slider for INO Images -->
       <div class="slider" id="ino-slider">
         <img src="assets/img/Ino observatory.jpg" class="active" alt="INO Observatory">
@@ -180,16 +190,6 @@
           <button onclick="nextSlide('milkyway-slider')">❯</button>
         </div>
       </div>
-    </div>
-
-    <!-- Academic Notes Section -->
-    <section id="notes">
-      <h2>Access My Files</h2>
-      <p>My notes and derivations for key cosmology texts are available below:</p>
-      <ul>
-        <li><a href="https://drive.google.com/drive/folders/1zZXXEmaMxbcW2_ejNytByNcWc7InKgOY?usp=sharing" target="_blank">Baumann's *Cosmology* Notes</a></li>
-        <li><a href="https://drive.google.com/drive/folders/1gyUmbMcte5FTwPy6-ijBKDV-IGwCmWAf?usp=sharing" target="_blank">Weinberg's *Cosmology* Notes</a></li>
-      </ul>
     </section>
   </main>
 
