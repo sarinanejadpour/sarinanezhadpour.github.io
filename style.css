@@ -6,14 +6,7 @@ body {
   background: #f8f9fa;
   color: #343a40;
   line-height: 1.6;
-  background: url('assets/img/background me.jpg') no-repeat center top;
-  background-size: cover; /* Ensure the background covers the entire site */
-  background-attachment: scroll; /* Allow scrolling */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent repeating */
-  image-rendering: auto; /* Smooth scaling */
 }
-
 /* Header */
 header {
   text-align: center;
@@ -29,7 +22,6 @@ header p {
   font-size: 1.2em;
   margin-top: 10px;
 }
-
 /* Sections */
 section {
   margin: 40px auto;
@@ -58,7 +50,6 @@ section ul li a {
 section ul li a:hover {
   text-decoration: underline;
 }
-
 /* Footer */
 footer {
   text-align: center;
