@@ -136,7 +136,7 @@
       <h1 style="text-align: center;">Mitra Maleki</h1>
       <p style="text-align: center;">B.Sc. Student in Physics | Aspiring Astrophysicist</p>
       <p>
-        Hello and welcome! My name is Mitra Maleki, and I am a passionate student dedicated to exploring the wonders of the universe. My interests lie in astrophysics and cosmology, and right now I am focused on understanding the early universe and its evolution. I enjoy combining theoretical physics with practical coding and data analysis. If you have any comments or corrections regarding my code, I would greatly appreciate your feedback. Please do not hesitate to contact me at mitramalekiy@gmail.com.
+        Hello and welcome! My name is Mitra Maleki, and I am a passionate student dedicated to exploring the wonders of the universe. My interests lie in astrophysics and cosmology, and right now I am focused on understanding the early universe and its evolution. I enjoy combining theoretical physics with practical coding and data analysis. If you have any comments or corrections regarding my code, I would greatly appreciate your feedback. Please do not hesitate to contact me at <a href="mailto:mitramalekiy@gmail.com">mitramalekiy@gmail.com</a>.
       </p>
     </header>
 
@@ -192,7 +192,7 @@
     function nextSlide(sliderId) {
       const slider = document.getElementById(sliderId);
       const activeImage = slider.querySelector('.active');
-      const nextImage = activeImage.nextElementSibling || slider.querySelector('img:first-child');
+      const nextImage = activeImage.nextElementSibling or slider.querySelector('img:first-child');
       activeImage.classList.remove('active');
       nextImage.classList.add('active');
     }
@@ -200,7 +200,7 @@
     function prevSlide(sliderId) {
       const slider = document.getElementById(sliderId);
       const activeImage = slider.querySelector('.active');
-      const prevImage = activeImage.previousElementSibling || slider.querySelector('img:last-child');
+      const prevImage = activeImage.previousElementSibling or slider.querySelector('img:last-child');
       activeImage.classList.remove('active');
       prevImage.classList.add('active');
     }
