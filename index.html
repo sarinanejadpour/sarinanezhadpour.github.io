@@ -192,7 +192,7 @@
     function nextSlide(sliderId) {
       const slider = document.getElementById(sliderId);
       const activeImage = slider.querySelector('.active');
-      const nextImage = activeImage.nextElementSibling or slider.querySelector('img:first-child');
+      const nextImage = activeImage.nextElementSibling || slider.querySelector('img:first-child');
       activeImage.classList.remove('active');
       nextImage.classList.add('active');
     }
@@ -200,7 +200,7 @@
     function prevSlide(sliderId) {
       const slider = document.getElementById(sliderId);
       const activeImage = slider.querySelector('.active');
-      const prevImage = activeImage.previousElementSibling or slider.querySelector('img:last-child');
+      const prevImage = activeImage.previousElementSibling || slider.querySelector('img:last-child');
       activeImage.classList.remove('active');
       prevImage.classList.add('active');
     }
